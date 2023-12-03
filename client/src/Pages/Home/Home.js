@@ -1,27 +1,20 @@
 import React from 'react';
 import './Home.css';
 const Home = () => {
+  const backgroundStyle = {
+    backgroundImage: `url('https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907.jpg.og.jpg?202310101606')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '100vh', // Set a minimum height for the viewport (viewport height)
+  };
+
   return (
     <>
+        <div style={backgroundStyle}>
     <section className="home" id="home">
-  <h3 data-speed="-2" className="home-parallax">
-    Drive your journey
-  </h3>
-  <picture>
-    <source
-      type="image/webp"
-      className="home-parallax cdn-image owl-lazy"
-      data-srcset="https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.400w.webp?t=1700308606 400w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.600w.webp?t=1700308606 600w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.800w.webp?t=1700308606 800w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.1000w.webp?t=1700308606 1000w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.1200w.webp?t=1700308606 1200w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.webp?t=1700308606 1680w"
-      sizes="100vw"
-      srcSet="https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.400w.webp?t=1700308606 400w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.600w.webp?t=1700308606 600w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.800w.webp?t=1700308606 800w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.1000w.webp?t=1700308606 1000w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.1200w.webp?t=1700308606 1200w, https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.webp?t=1700308606 1680w"
-    />
-    <img
-      data-speed="2"
-      className="home-parallax"
-      src="https://news.automobile.tn/2023/11/essai-opel-corsa-electric-2305_max_home.webp?t=1700308606" 
-      alt="Home Image"
-    />
-  </picture>
+  <h3 data-speed="-2" className="home-parallax" style={{color:'white'}}> Believes in technology  </h3>
+  
 </section>
 
 
@@ -124,6 +117,8 @@ const Home = () => {
 
 </div>
       </section>
+      </div>
+
     </>
   );
 };

@@ -22,13 +22,18 @@ const LoginUser = () => {
     // Navigate to the register page
     navigate('/register');
   };
-
+  const backgroundStyle = {
+    backgroundImage: `url('https://www.shutterstock.com/image-vector/mobile-phone-abstract-vector-closeup-600w-1188009991.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '100vh', // Set a minimum height for the viewport
+  }
   return (
     <section
       className="vh-100 gradient-custom"
       style={{
-        background: 'linear-gradient(to right, #FFFF00, #FFD700)',
-      }}
+        backgroundStyle      }}
     >
       <div className="container py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">

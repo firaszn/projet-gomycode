@@ -241,53 +241,48 @@ font-size: 3.5rem;
     resize: none;
 }
 
-
-
-.footer{
-    background: var(--light-yellow);
+.footer {
+    background: var(--light-);
     padding-bottom: 8rem;
 }
 
-.footer .box-container{
+.footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.2rem;
-    padding:1rem 0;
-    color:var(--black);
+    padding: 1rem 0;
+    color: var(--white);
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     display: block;
     font-size: 1.4rem;
-    padding:1rem 0;
-    color:var(--light-color);
+    padding: 1rem 0;
+    color: var(--white); /* Change color to white */
 }
 
-.footer .box-container .box a i{
-    padding-right: .5rem;
-    color:var(--black);
+.footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: var(--white);
 }
 
-.footer .box-container .box a:hover i{
+.footer .box-container .box a:hover i {
     padding-right: 2rem;
 }
 
-.footer .credit{
+.footer .credit {
     text-align: center;
-    padding:1.5rem;
+    padding: 1.5rem;
     padding-top: 2.5rem;
     margin-top: 2rem;
     border-top: var(--border);
     font-size: 2rem;
-    color:var(--black);
+    color: var(--white);
 }
-
-
-
 
 
 

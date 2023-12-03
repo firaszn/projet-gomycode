@@ -16,12 +16,17 @@ export default function RegisterUser() {
     e.preventDefault();
     dispatch(register(newUser, navigate));
   };
-
+  const backgroundStyle = {
+    backgroundImage: `url('https://www.shutterstock.com/image-vector/mobile-phone-abstract-vector-closeup-600w-1188009991.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '100vh', 
+  }
   return (
     <section
       className="vh-100 gradient-custom"
-      style={{
-        background: 'linear-gradient(to right, #FFFF00, #FFD700)',
+      style={{backgroundStyle
       }}
     >
       <div className="container py-5 h-100">

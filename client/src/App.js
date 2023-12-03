@@ -6,11 +6,11 @@ import LoginUser from './Pages/LoginUser';
 import RegisterUser from './Pages/RegisterUser';
 import NavBar from './Components/NavBar';
 import Error from './Pages/Error';
-import ProductList from './Pages/ProductList';
-import Cart from './Components/Cart';
 
 import { useDispatch } from 'react-redux';
 import { current } from './JS/Actions/user';
+import ProductCard from './Components/ProductCard';
+import Cart from './Components/Cart';
 
 
 function App() {
@@ -28,11 +28,11 @@ function App() {
       <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/register" element={<RegisterUser />} />
-  <Route path="/login" element={<LoginUser />} />
-  <Route path="/products" element={<ProductList />} />
   <Route path="/cart" element={<Cart />} />
-      
-        <Route path="/*" element={<Error />} />
+  <Route path="/list" element={<ProductCard />} />
+
+  <Route path="/login" element={<LoginUser />} />
+  <Route path="/*" element={<Error />} />
       </Routes>
     </div>
   );

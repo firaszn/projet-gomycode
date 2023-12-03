@@ -1,0 +1,129 @@
+/* YourCartStyles.css */
+
+.cart-container {
+    padding: 3rem 5rem; /* Increased padding */
+}
+
+.cart-container h2 {
+    font-weight: 400;
+    font-size: 36px; /* Increased font size */
+    text-align: center;
+}
+
+.cart-container .titles h3 {
+    font-size: 16px; /* Increased font size */
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cart-item,
+.cart-container .titles {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    column-gap: 1rem; /* Increased gap */
+}
+
+.cart-item {
+    border-top: 1px solid var(--clr-grey-6);
+    padding: 1.5rem 0; /* Increased padding */
+}
+
+.cart-item .cart-product img {
+    width: 120px; /* Decreased image width */
+    max-width: 100%;
+    margin-right: 1.5rem; /* Increased margin */
+}
+
+.cart-item .cart-product h3 {
+    font-weight: 400;
+    font-size: 18px; /* Increased font size */
+}
+
+.cart-item .cart-product button {
+    margin-top: 1rem; /* Increased margin */
+}
+
+.cart-item .cart-product-quantity {
+    width: 150px; /* Increased width */
+}
+
+.cart-item .cart-product-quantity button {
+    padding: 1rem 2rem; /* Increased padding */
+}
+
+.cart-item .cart-product-total-price {
+    font-weight: 700;
+    font-size: 20px; /* Increased font size */
+}
+
+/* cart summary */
+.cart-summary {
+    padding-top: 3rem; /* Increased padding */
+}
+
+.cart-summary .clear-btn {
+    width: 150px; /* Increased width */
+    height: 50px; /* Increased height */
+    font-size: 18px; /* Increased font size */
+}
+
+.cart-summary button.clear-btn:hover {
+    background-color: var(--clr-grey-6);
+    color: var(--clr-white);
+}
+
+.cart-checkout {
+    width: 300px; /* Increased width */
+}
+
+.cart-checkout .subtotal {
+    font-size: 24px; /* Increased font size */
+}
+
+.cart-checkout p {
+    font-size: 16px; /* Increased font size */
+    font-weight: 200;
+    margin: 1rem 0; /* Increased margin */
+}
+
+.cart-checkout button {
+    height: 50px; /* Increased height */
+    font-size: 18px; /* Increased font size */
+}
+
+.continue-shopping,
+.start-shopping {
+    margin-top: 1.5rem; /* Increased margin */
+}
+
+.continue-shopping a,
+.start-shopping a {
+    color: var(--clr-grey-6);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Increased font size */
+}
+
+.continue-shopping a span,
+.start-shopping a span {
+    margin-left: 1rem; /* Increased margin */
+}
+
+.cart-empty {
+    font-size: 24px; /* Increased font size */
+    margin-top: 3rem; /* Increased margin */
+    color: var(--clr-grey-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/medium/2/blue-paper-texture-background-with-kyoshino.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
